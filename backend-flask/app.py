@@ -13,23 +13,29 @@ from services.messages import *
 from services.create_message import *
 from services.show_activity import *
 
+# will create instance of the flask app
 app = Flask(__name__)
+# calling env var to take the URLs
 frontend = os.getenv('FRONTEND_URL')
 backend = os.getenv('BACKEND_URL')
+#this will create a list called origins contain the URLs called in the above code
 origins = [frontend, backend]
+
+# to create CORS config for the flask app
 cors = CORS(
+  # app is the falsk instance we created above
   app, 
-  resources={r"/api/*": {"origins": origins}},
-  expose_headers="location,link",
-  allow_headers="content-type,if-modified-since",
-  methods="OPTIONS,GET,HEAD,POST"
+  resources={r"/api/*": {"origins": origins}}, # this specify that requests under /api should be allowed only from CORS origins
+  expose_headers="location,link", # is about letting the browser expose certain headers to your frontend JavaScript code after a successful cross-origin request.
+  allow_headers="content-type,if-modified-since", #is about specifying which headers the server will allow in the actual request coming from the client.
+  methods="OPTIONS,GET,HEAD,POST" # the allowed http methods
 )
 
 @app.route("/api/message_groups", methods=['GET'])
-def data_message_groups():
-  user_handle  = 'andrewbrown'
-  model = MessageGroups.run(user_handle=user_handle)
-  if model['errors'] is not None:
+def data_message_groups(): # This function is executed when a GET request is made to the "/api/message_groups" endpoint.
+  user_handle  = 'andrewbrown' #This value is used in the subsequent call to MessageGroups.run().
+  model = MessageGroups.run(user_handle=user_handle) # This line invokes a function or method named run within the MessageGroups module or class, passing the user_handle as an argument.
+  if model['errors'] is not None: #is condition checks if there are any errors in the result obtained from MessageGroups.run()
     return model['errors'], 422
   else:
     return model['data'], 200
