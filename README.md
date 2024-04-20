@@ -2,8 +2,8 @@
 
 ![](https://codebuild.ca-central-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoidzQ5bVBva0pyU1lDODd1Uy96dXFxelNnTEh0dHFXUXNRR3hLT2RzRmVOaTZ5T3ZadHpSS29CazZ2SHBYckc0VXJEWEI2NFBKalMwcWM4RHh1Tk02b3RnPSIsIml2UGFyYW1ldGVyU3BlYyI6IjZTSzAxY2NiTU4rMmJJVGsiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)
 
-- Application: Cruddur
-- Cohort: 2023-A1
+- Application: CruddAI
+- Cohort: 2024-A2
 
 This is the starting codebase that will be used in the FREE AWS Cloud Project Bootcamp 2023
 
