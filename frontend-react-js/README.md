@@ -58,8 +58,8 @@ This directory contains the static files that will be served by the web server, 
 
 4. **browserconfig.xml:** it provides instructions to Microsoft browsers on how to display and configure the tile (icon) for a website or web application that has been pinned to the Start menu or taskbar.
 The <tile> element defines the configuration for the tile (icon) that will be displayed when the website is pinned.
-    **<square150x150logo src="mstile-150x150.png"/>:** This specifies the path to the 150x150 pixel PNG image that should be used as the tile icon for the pinned website.
-    **<TileColor>#da532c<TileColor>:** This sets the background color of the tile to the specified hexadecimal color value (#da532c, which is a reddish-orange color).
+    **square150x150logo src="mstile-150x150.png"/>:** This specifies the path to the 150x150 pixel PNG image that should be used as the tile icon for the pinned website.
+    **TileColor>#da532c TileColor>:** This sets the background color of the tile to the specified hexadecimal color value (#da532c, which is a reddish-orange color).
 
 5. **safari-pinned-tab.svg:** is a file used to customize the appearance of a website or web application when pinned or opened as a tab in Apple's Safari browser on macOS and iOS.
 
