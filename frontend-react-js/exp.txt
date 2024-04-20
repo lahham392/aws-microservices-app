@@ -1,10 +1,6 @@
-# Frontend React JS
-
-## Waht is React.js ???
+# Waht is React.js ???
 
 React.js is a JavaScript library for building user interfaces, 
 primarily focused on the frontend or client-side of web applications. 
 When working with React, you typically structure your files and directories in
 a specific way to organize your components, assets, and other related files.
-
-
