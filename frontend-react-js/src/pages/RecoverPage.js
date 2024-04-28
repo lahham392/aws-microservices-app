@@ -1,6 +1,6 @@
 import './RecoverPage.css';
 import React from "react";
-import {ReactComponent as Logo} from '../components/svg/logo.svg';
+import {ReactComponent as Logo} from '../components/svg/newlogo.svg';
 import { Link } from "react-router-dom";
 
 export default function RecoverPage() {
@@ -46,7 +46,7 @@ export default function RecoverPage() {
       className='recover_form'
       onSubmit={onsubmit_send_code}
     >
-      <h2>Recover your Password</h2>
+      <h2>Recover your Account Password</h2>
       <div className='fields'>
         <div className='field text_field username'>
           <label>Email</label>
