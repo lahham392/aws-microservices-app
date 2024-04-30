@@ -12,13 +12,16 @@ export default function JoinSection(props) {
           Have something you want to say?
         </p>
         <p>
+          Want to try AI capabilities? and How it can enhance social media wxperience?
+        </p>
+        <p>
           Don't think about it, just crud it!
         </p>
         <p>
           Regret it? No worries, We'll forget it...
         </p>
         <Link to="/signup" className="action">
-          Join Now!
+          Create account
         </Link>
         <Link to="/signin" className="subaction">
           Sign In
