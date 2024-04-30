@@ -1,5 +1,5 @@
 import './DesktopNavigation.css';
-import {ReactComponent as Logo} from './svg/logo.svg';
+import {ReactComponent as Logo} from './svg/newlogo.svg';
 import DesktopNavigationLink from '../components/DesktopNavigationLink';
 import CrudButton from '../components/CrudButton';
 import ProfileInfo from '../components/ProfileInfo';
