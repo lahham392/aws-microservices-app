@@ -41,8 +41,10 @@ export default function DesktopSidebar(props) {
         <a href="#">About</a>
         <a href="#">Terms of Service</a>
         <a href="#">Privacy Policy</a>
-        <a herf="#">More ...</a>
-        <a herf="#">© 2024 Lahham Corp.</a>
+        <div>
+          <a herf="#">More ...</a>
+          <a herf="#">© 2024 Lahham Corp.</a>
+        </div>
       </footer>
     </section>
   );
